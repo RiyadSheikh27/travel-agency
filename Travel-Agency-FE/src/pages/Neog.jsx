@@ -64,7 +64,7 @@ const Neog = () => {
     ];
 
     return (
-        <div className='w-screen flex justify-center items-center bg-gradient-to-r from-yellow-50 to-orange-200 pt-20 pb-20 font-sutonny'>
+        <div className='flex justify-center items-center bg-gradient-to-r from-yellow-50 to-orange-200 pt-20 pb-20 '>
             <div>
                 {/* Neog section */}
                 <div className='pb-10 text-center space-y-4'>

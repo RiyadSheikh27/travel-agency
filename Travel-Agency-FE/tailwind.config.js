@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sutonny: ['SutonnyMJ', 'sans-serif'],
+        sutonny: ['Siyamrupali', 'sans-serif'],
       },
     },
   },

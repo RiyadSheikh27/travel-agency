@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Siyamrupali';
+    src: url('../public/fonts/Siyamrupali.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Or apply globally */
+body {
+    font-family: 'Siyamrupali', Arial, sans-serif;
+  }

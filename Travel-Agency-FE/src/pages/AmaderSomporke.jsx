@@ -13,9 +13,9 @@ const AmaderSomporke = () => {
     return (
 
         // set font as sutonnyMJ
-        <div className='font-sutonny'>
+        <div className=''>
             {/* aboutus section */}
-            <div className='w-screen h-auto flex justify-center items-center text-center'>
+            <div className='h-auto flex justify-center items-center text-center'>
                 <div>
                     {/* mapping the data */}
                     {data.map((info, index) => ((

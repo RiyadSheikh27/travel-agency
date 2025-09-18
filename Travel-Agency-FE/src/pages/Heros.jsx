@@ -4,7 +4,7 @@ const Heros = () => {
   // mock data for hero section
   const details = [
     {
-      text: "১ লক্ষ+ সফল বিদেশ যাত্রা", 
+      text: "২০০+ সফল বিদেশ যাত্রা", 
       logos: [
         "https://web.moxcreative.com/markeezo/wp-content/uploads/sites/18/2023/03/logo-1.png", 
         "https://web.moxcreative.com/markeezo/wp-content/uploads/sites/18/2023/03/logo-2.png",
@@ -22,9 +22,9 @@ const Heros = () => {
       <div 
         className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center px-4 sm:px-6 lg:px-8"
         style={{ 
-          backgroundImage: `url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `url('/travel.jpg')`,
           backgroundBlendMode: 'overlay',
-          backgroundColor: 'rgba(0,0,0,0.6)'
+          backgroundColor: 'rgba(0,0,0,0.7)'
         }}
       >
         <div className='container mx-auto max-w-7xl'>

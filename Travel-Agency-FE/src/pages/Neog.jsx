@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import banner1 from '../images/demo1.jpg';
+import banner1 from '../../public/1.webp';
 import banner2 from '../images/demo2.jpg';
 import banner3 from '../images/demo3.jpg';
 import banner4 from '../images/demo4.jpg';
@@ -48,19 +48,10 @@ const Neog = () => {
         window.open(whatsappUrl, '_blank');
     };
 
-    // Mock data for Neog section
-    // const category = [
-    //     { banner: 'https://websitedemos.net/clothing-store-04/wp-content/uploads/sites/1538/2025/05/category-01.jpg', title: 'বিস্তারিত ১', description: 'এটা হলো বিস্তারিত ১' },
-    //     { banner: 'https://websitedemos.net/clothing-store-04/wp-content/uploads/sites/1538/2025/05/category-02.jpg', title: 'বিস্তারিত ২', description: 'এটা হলো বিস্তারিত ২' },
-    //     { banner: 'https://websitedemos.net/clothing-store-04/wp-content/uploads/sites/1538/2025/05/category-03.jpg', title: 'বিস্তারিত ৩', description: 'এটা হলো বিস্তারিত ৩' },
-    //     { banner: 'https://websitedemos.net/clothing-store-04/wp-content/uploads/sites/1538/2025/05/category-04.jpg', title: 'বিস্তারিত ৪', description: 'এটা হলো বিস্তারিত ৪' }
-    // ];
     const category = [
-        { banner: banner1, title: 'বিস্তারিত ১', description: 'এটা হলো বিস্তারিত ১' },
-        { banner: banner2, title: 'বিস্তারিত ২', description: 'এটা হলো বিস্তারিত ২' },
-        { banner: banner3, title: 'বিস্তারিত ৩', description: 'এটা হলো বিস্তারিত ৩' },
-        { banner: banner4, title: 'বিস্তারিত ৪', description: 'এটা হলো বিস্তারিত ৪' },
-        { banner: banner5, title: 'বিস্তারিত ৫', description: 'এটা হলো বিস্তারিত ৫' },
+        { banner: banner1, title: 'পদঃ ড্রাইভার', company: 'কোম্পানিঃ আরামকো', salary: 'বেতনঃ ১৫০০ রিয়াল + ওটি + খাবার', logo: 'aramco.png', description: 'এটা হলো বিস্তারিত ১' },
+        { banner: banner1, title: 'পদঃ ড্রাইভার', company: 'কোম্পানিঃ আরামকো', salary: 'বেতনঃ ১৫০০ রিয়াল + ওটি + খাবার', logo: 'aramco.png', description: 'এটা হলো বিস্তারিত ১' },
+        { banner: banner1, title: 'পদঃ ড্রাইভার', company: 'কোম্পানিঃ আরামকো', salary: 'বেতনঃ ১৫০০ রিয়াল + ওটি + খাবার', logo: 'aramco.png', description: 'এটা হলো বিস্তারিত ১' },
     ];
 
     return (
@@ -69,23 +60,68 @@ const Neog = () => {
                 {/* Neog section */}
                 <div className='pb-10 text-center space-y-4'>
                     {/* Title and description */}
-                    <h1 className='lg:text-5xl text-xl text-black font-bold'>আমাদের বিভাগসমূহ</h1>
+                    <h1 className='lg:text-5xl text-xl text-black font-bold'>নিয়োগ সমূহ</h1>
                     <p className='lg:text-xl text-sm'>আপনার আগ্রহ এবং যোগ্যতা অনুযায়ী বিভিন্ন বিভাগের পদগুলো দেখুন।</p>
                 </div>
-                <div className='lg:grid lg:grid-cols-2 lg:gap-20 flex flex-col justify-center items-center gap-16'>
-                    {/* Mapping the data */}
+                <div className='lg:grid lg:grid-cols-3 lg:gap-10 flex flex-col justify-center items-center gap-10'>
                     {category.map((cata, index) => (
-                        <div key={index}>
-                            {/* Banner image */}
-                            <img className='border-2 border-gray-500 bg-[rgba(0,0,0,0.6)] bg-blend-overlay rounded-4xl mt-15 lg:w-[600px]' src={cata.banner} alt="" />
-                            <div className="lg:w-96 w-80 p-6 bg-gradient-to-r from-green-100 to-orange-300  flex justify-evenly items-center text-white font-bold lg:ml-28 ml-10 -mt-10 rounded-tl-full rounded-br-full absolute">
-                                {/* Button for details and contact */}
-                                <button onClick={() => handelModelOpen(cata)} className="lg:px-6 lg:py-3 px-3 py-2 bg-cyan-950 rounded-md">বিস্তারিত</button>
-                                <button onClick={openModel} className="lg:p-3 p-2 bg-cyan-500 rounded-md">যোগাযোগ</button>
+                        <div
+                            key={index}
+                            className="bg-white rounded-2xl shadow-lg overflow-hidden w-80 lg:w-96 flex flex-col items-center"
+                        >
+                            {/* Image */}
+                            <img
+                                className='w-full h-full object-contain'
+                                src={cata.banner}
+                                alt={cata.title}
+                            />
+
+                            {/* Designation/Title */}
+                            {/* <div className="p-4 text-center font-bold text-lg text-black">
+                                {cata.title} <br />
+                                {cata.company} <br />
+                                {cata.salary}
+                            </div> */}
+
+                            {/* Designation/Title with Company Logo */}
+                            <div className="flex justify-between items-center w-full px-4">
+                                {/* Left side text */}
+                                <div className="text-left font-bold text-lg text-black">
+                                    {cata.title} <br />
+                                    <span className="text-sm font-medium">{cata.company}</span> <br />
+                                    <span className="text-sm text-gray-600">{cata.salary}</span>
+                                </div>
+
+                                {/* Right side logo */}
+                                {cata.logo && (
+                                    <img
+                                        src={cata.logo}
+                                        alt={`${cata.company} logo`}
+                                        className="w-28 h-28 object-contain ml-4"
+                                    />
+                                )}
+                            </div>
+
+
+                            {/* Buttons */}
+                            <div className="flex justify-evenly items-center w-full p-4 pt-0 gap-4">
+                                <button
+                                    onClick={() => handelModelOpen(cata)}
+                                    className="flex-1 bg-cyan-950 text-white py-2 rounded-md font-semibold"
+                                >
+                                    বিস্তারিত
+                                </button>
+                                <button
+                                    onClick={openModel}
+                                    className="flex-1 bg-cyan-500 text-white py-2 rounded-md font-semibold"
+                                >
+                                    যোগাযোগ
+                                </button>
                             </div>
                         </div>
                     ))}
                 </div>
+
 
                 {/* Modal for contact */}
                 {isModelOpen && (
@@ -94,14 +130,14 @@ const Neog = () => {
                             <div className="flex justify-between items-center mb-4">
                                 <div>
                                     {/* Modal title */}
-                                    <h1 className="text-center font-extrabold lg:text-2xl text-xl bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent">যোগাযোগ করুন আমাদের সাথে</h1>
+                                    <h1 className="text-center font-extrabold lg:text-2xl text-xl text-orange-600 bg-clip-text">যোগাযোগ করুন আমাদের সাথে</h1>
                                     {/* Modal close button */}
                                     <button className="absolute top-3 right-3 text-orange-700 text-4xl font-bold font-serif" onClick={closeModel}>&times;</button>
                                 </div>
                             </div>
                             <div className="flex justify-evenly items-center gap-10">
                                 {/* Call button */}
-                                <button className="lg:px-4 lg:py-3 px-2 py-2 bg-cyan-300 flex justify-between rounded-md items-center lg:gap-4 gap-2" onClick={phoneHandel}>
+                                <button className="lg:px-4 lg:py-3 px-2 py-2 bg-orange-300 flex justify-between rounded-md items-center lg:gap-4 gap-2" onClick={phoneHandel}>
                                     <span className="text-2xl text-blue-500"><FaPhone /></span>
                                     <h1 className="text-black lg:font-extrabold font-bold">কল করুন</h1>
                                 </button>

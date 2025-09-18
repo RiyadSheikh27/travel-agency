@@ -67,7 +67,7 @@ const Heros = () => {
                       className='w-32 h-16 sm:w-36 sm:h-20 lg:w-40 lg:h-24 flex items-center justify-center p-2 hover:scale-105 transition-transform duration-300'
                     >
                       <img
-                        className='max-w-full max-h-full object-contain hover:grayscale-0 transition-all duration-300'
+                        className='max-w-24 max-h-24 object-cover hover:grayscale-0 transition-all duration-300'
                         src={logo}
                         alt={`Partner company ${idx + 1}`}
                         loading="lazy"

@@ -23,8 +23,8 @@ const Footer = () => {
       { name: 'হোটেল বুকিং', href: '#' }
     ],
     contact: {
-      phone: '+৮৮০১৭১২৩৪৫৬৭৮',
-      email: 'info@travelagency.com',
+      phone: '+8801612168868',
+      email: 'riyad.cse27@gmail.com',
       address: 'ঢাকা, বাংলাদেশ',
       workingHours: 'সকাল ৯টা - রাত ৯টা'
     },

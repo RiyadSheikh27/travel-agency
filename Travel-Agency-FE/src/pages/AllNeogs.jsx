@@ -38,9 +38,9 @@ const AllNeogs = () => {
   const openModel = () => setIsModelOpen(true);
   const closeModel = () => setIsModelOpen(false);
 
-  const whatsappNumber = "+8801766957233";
+  const whatsappNumber = "+8801612168868";
   const message = "হ্যালো, আমি আপনার সেবায় আগ্রহী!";
-  const phoneNumber = "+8801766957233";
+  const phoneNumber = "+8801612168868";
 
   const phoneHandel = () => {
     window.location.href = `tel:${phoneNumber}`;

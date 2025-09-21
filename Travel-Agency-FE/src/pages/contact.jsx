@@ -5,9 +5,9 @@ const Contact = () => {
     const contactInfo = {
         title: 'আমাদের সাথে যোগাযোগ করুন',
         subtitle: 'আপনার স্বপ্নের ভ্রমণ পরিকল্পনা করতে আজই যোগাযোগ করুন',
-        phone: '+৮৮০১৭১২৩৪৫৬৭৮',
-        whatsapp: '+৮৮০১৭১২৩৪৫৬৭৮',
-        email: 'info@travelagency.com',
+        phone: '+8801612168868',
+        whatsapp: '+8801612168868',
+        email: 'riyad.cse27@gmail.com',
         address: 'ঢাকা, বাংলাদেশ',
         workingHours: 'সকাল ৯টা - রাত ৯টা (সাত দিন)',
         description: 'আপনার যেকোনো প্রশ্ন বা ভ্রমণ পরিকল্পনার জন্য আমাদের অভিজ্ঞ টিমের সাথে যোগাযোগ করুন।'
@@ -18,7 +18,7 @@ const Contact = () => {
     };
 
     const handleWhatsApp = () => {
-        const message = encodeURIComponent('আস্সালামু আলাইকুম! আমি ভ্রমণ পরিকল্পনা সম্পর্কে জানতে চাই।');
+        const message = encodeURIComponent('আস্সালামু আলাইকুম! আমি আপনাদের সার্ভিস সম্পর্কে জানতে চাই।');
         window.open(`https://wa.me/${contactInfo.whatsapp.replace(/[^0-9]/g, '')}?text=${message}`, '_blank');
     };
 

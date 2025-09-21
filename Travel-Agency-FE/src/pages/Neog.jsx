@@ -42,9 +42,9 @@
 //     setIsModelOpen(false);
 //   };
 
-//   const whatsappNumber = "+8801766957233"; // Replace with your WhatsApp number
+//   const whatsappNumber = "+8801612168868"; // Replace with your WhatsApp number
 //   const message = "হ্যালো, আমি আপনার সেবায় আগ্রহী!"; // Replace with your custom message
-//   const phoneNumber = "+8801766957233"; // Replace with your phone number
+//   const phoneNumber = "+8801612168868"; // Replace with your phone number
 
 //   // Phone handler function
 //   const phoneHandel = () => {
@@ -287,9 +287,9 @@ const Neog = () => {
   const openModel = () => setIsModelOpen(true);
   const closeModel = () => setIsModelOpen(false);
 
-  const whatsappNumber = "+8801766957233";
+  const whatsappNumber = "+8801612168868";
   const message = "হ্যালো, আমি আপনার সেবায় আগ্রহী!";
-  const phoneNumber = "+8801766957233";
+  const phoneNumber = "+8801612168868";
 
   const phoneHandel = () => {
     window.location.href = `tel:${phoneNumber}`;

@@ -4,6 +4,7 @@ import Heros from '../pages/Heros'
 import Neog from '../pages/Neog'
 import Layout from '../layout/Layout'
 import AmaderSomporke from '../pages/AmaderSomporke'
+import AllNeogs from '../pages/AllNeogs'
 
 const Routeing = () => {
   return (
@@ -14,6 +15,7 @@ const Routeing = () => {
         <Route path='hero' element={<Heros />} />
         <Route path='neog' element={<Neog />} />
         <Route path='amadersomporke' element={<AmaderSomporke />} />
+        <Route path='allNeogs' element={<AllNeogs />} />
         {/* <Route path='model' element={<ModalExample />} /> */}
     </Routes>
     </>

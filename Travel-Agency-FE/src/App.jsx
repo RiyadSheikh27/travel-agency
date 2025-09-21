@@ -7,7 +7,7 @@ import Routeing from './routing/Routeing'
 const App = () => {
   return (
   <>
-   <Routeing />  {/*routing component */}
+   <Routeing />
   </>
   )
 }

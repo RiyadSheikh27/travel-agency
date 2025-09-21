@@ -8,7 +8,7 @@ const Layout = () => {
     <>
     {/* laout */}
      <Navbar />
-        <main className='pt-20'><Home/></main> {/* main content with fixed navbar */}
+        <main className='pt-20'><Home/></main>
       <Footer />
     </>
   )

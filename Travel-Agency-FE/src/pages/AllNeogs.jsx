@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ApiBaseUrl from "../api/ApiBaseUrl";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AllNeogsNavbar from "../components/AllNeogsNavbar";
 import { FaPhone, FaSquareWhatsapp } from "react-icons/fa6";

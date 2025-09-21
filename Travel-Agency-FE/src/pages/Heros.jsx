@@ -28,7 +28,7 @@ const Heros = () => {
           <div className='text-white space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left lg:max-w-3xl xl:max-w-4xl py-16 sm:py-20 lg:py-24'>
             {/* Title */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight'>
-              <div className='mb-2 sm:mb-4'>ভ্রমণ আর নয় স্বপ্ন</div>
+              <div className='mb-2 sm:mb-4'>বিদেশ আর নয় স্বপ্ন</div>
               <div>এবার বাস্তবতা</div>
             </h1>
 
